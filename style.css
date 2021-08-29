@@ -1,0 +1,240 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin-top: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+
+.wrapper {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.kolom {
+    margin-top: 140px;
+    margin-bottom: 20px;
+}
+
+.about {
+    margin-top: 140px;
+    margin-bottom: 20px;
+}
+
+.judul {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'cursive';
+    color: #000000;
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: 900;
+    font-family: 'cursive';
+    color: #000000;
+    margin-bottom: 20px;
+    width: 100%;
+    line-height: 50px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'cursive';
+    color: #000000;
+}
+p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.works-list {
+    position: relative;
+    display: grid;
+    list-style-type: none;
+    margin-right: 50px;
+    margin-left: 50px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+}
+
+.works-img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.works-img img{
+    border-radius: 10%;
+    width: 300px;
+    height: 200px;
+    box-shadow: 5px 5px 10px 2px #ED8E7C;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.75s all;
+    transition-property: all;
+    transition-duration: 0.75s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.works-img p{
+    font-family: 'Lucida Sans';
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color: #ED8E7C;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.my-hobby {
+    display: grid;
+    grid-template-columns: 50% auto;
+    padding: 0cm 0cm;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.my-hobby p{
+    margin-top: 150px;
+    font-size: 16px;
+}
+
+.skill-interest {
+    margin-left:100px;
+    margin-right: 100px;
+}
+
+.skill-interest ul {
+    display:grid;
+    list-style-type:none;
+    grid-template-columns: repeat(2, auto);
+}
+.skill-interest ul li {
+    padding: 32px;
+    color:#ED8E7C;
+}
+.skill-interest li span {
+    display:block;
+    font-size:16px;
+    font-weight: bold;
+    color: #cf6752;
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: 0;
+        line-height: 40px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    section img {
+        display: block;
+        align-items: center;
+        max-width: 300px;
+        max-height: 250px;
+    }
+
+    .kolom {
+        margin-top: 20px;
+        text-align: center;
+        line-height: 2px;
+    }
+    
+    .skill-interest ul p {
+        font-size: 12px;
+    }
+
+    .skill-interest li span {
+        font-size: 12px;
+    }
+
+    .skill-interest ul {
+        display:grid;
+        list-style-type:none;
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    .skill-interest {
+        margin-left:0px;
+        margin-right: 30px;
+    }    
+
+    .works-list {
+        display: block;
+        align-items: center;
+    }      
+
+    .works-img {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .works-img p {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .my-hobby {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .my-hobby img {
+        max-width: 300px;
+        max-height: 250px;
+    }
+
+    .my-hobby p {
+        margin-top: 20px;
+    }
+}
